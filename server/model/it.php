@@ -14,7 +14,7 @@ class It
     {
         $query = select('*', $this->tableName, "serial_number='$serial'");
         if (!$query) {
-            $insertLaptop = insert($this->tableName, '`laptop_id`, `mark`, `size`, `serial_number`, `user_id`', "NULL,$mark,$size,$serial,$user_id");
+            $insertLaptop = insert($this->tableName, '`laptop_id`, `mark`, `size`, `serial_number`, `user_id`', "NULL,'$mark','$size','$serial','$user_id'");
             die("Inserted Successfuly");
         } else {
             return "serial already used";
@@ -23,7 +23,7 @@ class It
 
     function deleteLaptops($laptop_id)
     {
-        $deleteLaptops = delete($this->tableName, "laptop_id=$laptop_id");
+        $deleteLaptops = delete($this->tableName, "laptop_id='$laptop_id'");
         if ($deleteLaptops) {
             return "Record deleted successfully";
         } else {
@@ -32,7 +32,7 @@ class It
     }
     function updateLaptops($laptop_id, $mark, $size, $serial)
     {
-        $updateLaptops = update($this->tableName, "mark=$mark,size=$size,serial_number=$serial", "laptop_id=$laptop_id");
+        $updateLaptops = update($this->tableName, "mark='$mark',size='$size',serial_number='$serial'", "laptop_id='$laptop_id'");
         if ($updateLaptops) {
             return "Record updated successfully";
         } else {
@@ -41,7 +41,7 @@ class It
     }
     function selectLaptops()
     {
-        $selectLaptop = select("*", $this->tableName);
+        $selectLaptop = select("*", $this->tableName, "");
         if ($selectLaptop) {
             return $selectLaptop;
         } else {
