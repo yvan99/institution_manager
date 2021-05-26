@@ -1,5 +1,4 @@
 <?php
-require_once '../init.php';
 function select($data, $table, $condition)
 {
     $conn = db();
