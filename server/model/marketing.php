@@ -1,5 +1,4 @@
 <?php
-require_once '../init.php';
 class Marketing
 {
     public $tableName = "advertisment";
@@ -12,7 +11,7 @@ class Marketing
     function insertAdvert($name, $description, $user_id)
     {
         $conn = db();
-        $query = select("*", $this->tableName, "name='$name'");
+        $query = selectI("*", $this->tableName, "name='$name'");
         if (!$query) {
             $insertAd = insert($this->tableName, '`ads_id`, `name`, `description`, `user_id`', "NULL,'$name','$description','$user_id'");
             return "advert creation successful";

@@ -1,5 +1,4 @@
 <?php
-require_once '../init.php';
 class It
 {
 
@@ -12,7 +11,7 @@ class It
 
     function insertLaptops($mark, $size, $serial, $user_id)
     {
-        $query = select('*', $this->tableName, "serial_number='$serial'");
+        $query = selectI('*', $this->tableName, "serial_number='$serial'");
         if (!$query) {
             $insertLaptop = insert($this->tableName, '`laptop_id`, `mark`, `size`, `serial_number`, `user_id`', "NULL,'$mark','$size','$serial','$user_id'");
             die("Inserted Successfuly");

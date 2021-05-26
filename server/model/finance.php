@@ -1,5 +1,4 @@
 <?php
-require_once '../init.php';
 class Finance
 {
 
@@ -12,8 +11,7 @@ class Finance
 
     function insertInvoice($name, $date, $user_id)
     {
-        $conn = db();
-        $query = select('*', $this->tableName, "name='$name'");
+        $query = selectI('*', $this->tableName, "name='$name'");
         if (!$query) {
             $insertInvoice = insert($this->tableName, '`invoice_id`, `name`, `date`, `user_id`', "NULL,'$name','$date','$user_id'");
             die("done");
@@ -42,7 +40,7 @@ class Finance
     }
     function selectInvoice()
     {
-        $selectInvoice = select("*", $this->tableName, "");
+        $selectInvoice = select("*", $this->tableName, "1");
         if ($selectInvoice) {
             return $selectInvoice;
         } else {
