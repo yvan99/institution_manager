@@ -21,20 +21,20 @@
     <div class="hero-area-l11 position-relative z-index-1 overflow-hidden">
       <div class="container position-relative">
         <div class="row position-relative justify-content-center">
-          <div class="col-xl-8 col-lg-9 col-md-12 order-lg-1 order-1">
+
+          <div class="col-xl-6 col-md-5 col-md-10" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <div class="content-img position-relative z-index-1">
+              <img src="assets/landing/image/01.png" alt="" class="w-100">
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-9 col-md-12 order-lg-1 order-1">
             <div class="content">
-              <h1>Institute<br class="d-none d-md-block"> Management software.</h1>
+              <h1>Employee<br class="d-none d-md-block"> Management software.</h1>
               <div class="row banner-l-11-bottom-content">
-                <div class="col-lg-8 col-md-8 col-sm-10">
-                  <p class="position-relative banner-main-content-l-11">Create custom landing pages with
-                    Shades that convert more
-                    visitors
-                    than any website—no coding required.
-                    <span class="line-left-content"></span>
-                  </p>
-                </div>
+
                 <div class="col-lg-4 col-md-4 col-sm-6 flex-y-center ">
-                  <a class="btn l-11-hero-btn" href="#">Download free trial</a>
+                  <a class="btn l-11-hero-btn" href="#">Get started</a>
                 </div>
               </div>
             </div>
@@ -51,21 +51,22 @@
     </div>
 
     <!-- Content Area-1 -->
-    <div class="content-area-l-11-1">
+    <div class="content-area-l-11-2">
       <div class="container">
         <div class="row align-items-center justify-content-lg-start justify-content-center">
-          <div class="col-xl-6 col-md-5 col-md-10" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
-            <div class="content-img position-relative z-index-1">
-              <img src="assets/landing/image/l2/content-img1.png" alt="" class="w-100">
-            </div>
-          </div>
+
           <div class="offset-xxl-1 col-xxl-5 col-xl-6 col-lg-7 col-md-9" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
             <div class="content section-heading-5">
               <h2>
-                Build Beautiful Landing Pages Faster.
+                Powerful and responsive
               </h2>
-              <p>Create custom landing pages with Shades that convert more visitors than any website, no coding
-                required.</p>
+              <p>Our system is powerful and responsive on all platforms , and best security practices of coourse</p>
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-md-5 col-md-10" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <div class="content-img position-relative z-index-1">
+              <img src="assets/landing/image/df2.png" alt="" class="w-100">
             </div>
           </div>
         </div>
@@ -75,10 +76,15 @@
     <div class="content-area-l-11-2">
       <div class="container">
         <div class="row align-items-center justify-content-lg-between justify-content-center">
+          <div class="col-xxl-6 offset-xxl-2 col-xl-6 col-lg-5 col-md-9 order-lg-1 order-0" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+            <div class="content-img">
+              <img src="assets/landing/image/l2/content-img2.png" alt="" class="w-lg-auto w-100">
+            </div>
+          </div>
           <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-9 order-lg-1 order-1" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
             <div class="content section-heading-5">
               <h2>
-                Completely Free for Everyone.
+                Best features include
               </h2>
               <div class="d-flex content-l-11-3-card">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="27" viewBox="0 0 32 27">
@@ -97,51 +103,16 @@
                 </svg>
                 <div class="content-body">
                   <h5>Easy setup process</h5>
-                  <p>Editing and customizing Essential Landing is easy and fast.</p>
+                  <p>Setting up is fast and easy</p>
                 </div>
               </div>
               <div class="d-flex content-l-11-3-card">
                 <img src="assets/landing/image/l2/settings.svg" alt="icon">
                 <div class="content-body">
-                  <h5>Built for real users</h5>
-                  <p>Editing and customizing Essential Landing is easy and fast.</p>
+                  <h5>Multi platform compatibility</h5>
+                  <p>Software runs on multiple devices</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-xxl-6 offset-xxl-2 col-xl-6 col-lg-5 col-md-9 order-lg-1 order-0" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
-            <div class="content-img">
-              <img src="assets/landing/image/l2/content-img2.png" alt="" class="w-lg-auto w-100">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Content Area -->
-    <div class="content-area-l-11-3 position-relative">
-      <div class="container">
-        <div class="row align-items-center justify-content-center justify-content-lg-start">
-          <div class="col-xl-6 col-lg-6 col-md-8 order-lg-1 order-0" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-            <div class="content-img">
-              <img src="assets/landing/image/l2/content-img3.png" alt="" class="w-100">
-            </div>
-          </div>
-          <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-9 order-lg-1 order-1" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-            <div class="content section-heading-5">
-              <h2>Completely Free for Everyone.</h2>
-              <p>Event is not like most tech conferences. We want our presentations to engage the audience, spark
-                discussion and inspire new ideas. </p>
-              <ul class="list-unstyled pl-0">
-                <li class="d-flex align-items-center">
-                  <i class="fas fa-check"></i>Unlimited design possibility
-                </li>
-                <li class="d-flex align-items-center">
-                  <i class="fas fa-check"></i>Completely responsive
-                </li>
-                <li class="d-flex align-items-center">
-                  <i class="fas fa-check"></i>Easy to customize
-                </li>
-              </ul>
             </div>
           </div>
         </div>
