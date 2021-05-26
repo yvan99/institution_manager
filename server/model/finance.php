@@ -1,5 +1,5 @@
 <?php
-require_once 'config/connect.php';
+require_once '../init.php';
 class Finance
 {
 
@@ -15,7 +15,7 @@ class Finance
         $conn = db();
         $query = select('*', $this->tableName, "name='$name'");
         if (!$query) {
-            $insertInvoice = insert($this->tableName, '`invoice_id`, `name`, `date`, `user_id`', "NULL,$name,$date,$user_id");
+            $insertInvoice = insert($this->tableName, '`invoice_id`, `name`, `date`, `user_id`', "NULL,'$name','$date','$user_id'");
             die("done");
         } else {
             return "name already used";
@@ -24,7 +24,7 @@ class Finance
 
     function deleteInvoice($invoice_id)
     {
-        $deleteInvoice = delete($this->tableName, "invoice_id=$invoice_id");
+        $deleteInvoice = delete($this->tableName, "invoice_id='$invoice_id'");
         if ($deleteInvoice) {
             return "Record deleted successfully";
         } else {
@@ -33,7 +33,7 @@ class Finance
     }
     function updateInvoice($invoice_id, $name, $date, $user_id)
     {
-        $updateInvoice = update($this->tableName, "name=$name,date=$date", "invoice_id=$invoice_id");
+        $updateInvoice = update($this->tableName, "name='$name',date='$date'", "invoice_id='$invoice_id'");
         if ($updateInvoice) {
             return "Record updated successfully";
         } else {

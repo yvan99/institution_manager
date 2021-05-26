@@ -1,5 +1,5 @@
 <?php
-require_once 'server/init.php';
+require_once '../init.php';
 class Marketing
 {
     public $tableName = "advertisment";
@@ -14,7 +14,7 @@ class Marketing
         $conn = db();
         $query = select("*", $this->tableName, "name='$name'");
         if (!$query) {
-            $insertAd = insert($this->tableName, '`ads_id`, `name`, `description`, `user_id`', "NULL,$name,$description,$user_id");
+            $insertAd = insert($this->tableName, '`ads_id`, `name`, `description`, `user_id`', "NULL,'$name','$description','$user_id'");
             return "advert creation successful";
         } else {
             return "advert exits";
@@ -24,7 +24,7 @@ class Marketing
     function deleteAdvert($ads_id)
     {
         $conn = db();
-        $deleteAdvert = delete($this->tableName, "ads_id=$ads_id");
+        $deleteAdvert = delete($this->tableName, "ads_id='$ads_id'");
         if ($deleteAdvert) {
             return "Advert deleted!";
         } else {
@@ -34,7 +34,7 @@ class Marketing
 
     function updateAdvert($ads_id, $name, $description, $user_id)
     {
-        $updateAdvert = update($this->tableName, "name=$name,description=$description", "ads_id=$ads_id");
+        $updateAdvert = update($this->tableName, "name='$name',description='$description'", "ads_id='$ads_id'");
         if ($updateAdvert) {
             return "Advert Updated!";
         } else {
