@@ -40,7 +40,9 @@ class It
     }
     function selectLaptops()
     {
-        $selectLaptop = select("*", $this->tableName, "");
+
+        $selectLaptop = select("*", $this->tableName,"");
+
         if ($selectLaptop) {
             return $selectLaptop;
         } else {
