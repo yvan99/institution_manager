@@ -10920,21 +10920,21 @@ Content Area-1 L-11-1
 Content Area-1 L-11-2
         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .content-area-l-11-2 {
-  padding-top: 50px;
-  padding-bottom: 42px;
+  padding-top: 10px;
+  padding-bottom: 12px;
 }
 
 @media (min-width: 768px) {
   .content-area-l-11-2 {
-    padding-top: 70px;
-    padding-bottom: 62px;
+    padding-top: 10px;
+    padding-bottom: 12px;
   }
 }
 
 @media (min-width: 992px) {
   .content-area-l-11-2 {
-    padding-top: 125px;
-    padding-bottom: 110px;
+    padding-top: 15px;
+    padding-bottom: 10px;
   }
 }
 
