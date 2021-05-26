@@ -21,14 +21,18 @@
                 <?php
                 require_once '../init.php';
                 if (isset($_POST['submit'])) {
-                    $names = "ange";
-                    $dob = "2020-10-10";
-                    $user_id = 2;
+                    $names = "mark";
+                    $dob = "2020-1-1";
+                    $user_id = 3;
+                    $invoice_id = 2;
                     $class = new Finance();
-                    $query = $class->insertInvoice($names, $dob, $user_id);
-                    echo $query;
-                }
-                ?>
+                    // $query = $class->insertInvoice($names, $dob, $user_id);
+                    // echo $query;
+                    $query = $class->selectInvoice();
+                    while ($row = mysqli_fetch_array($query)) {
+                        echo $row['name'] . "<br>";
+                    }
+                }   ?>
             </div>
         </div>
     </div>
